@@ -4,11 +4,13 @@
 ##################################
 #
 # Nombre: ej05-calcula_segundos.sh
-# Objetivo: Calcular el total de segundos a partir de días, horas, minutos y segundos
+# Objetivo: Calcular el total de segundos
+#	    a partir de días, horas, minutos 
+#	    y segundos proporcionados
 #
 # Entradas: $1: días, $2: horas, $3: minutos, $4: segundos
 #
-# Salidas: Total de segundos del tiempo indicado
+# Salidas: Total de segundos del tiempo
 #
 ##################################
 

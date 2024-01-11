@@ -3,11 +3,13 @@
 ##################################
 #
 # Nombre: ej06-calcula_tiempos.sh
-# Objetivo: Convertir segundos en días, horas, minutos y segundos
+# Objetivo: Convertir segundos en días, 
+#	    horas, minutos y segundos
 #
 # Entradas: $1: Número de segundos
 #
-# Salidas: Desglose en días, horas, minutos y segundos
+# Salidas: Cantidad de  días, horas,
+#	    minutos y segundos
 #
 ##################################
 
@@ -20,10 +22,12 @@ fi
 total=$1
 segundos=$total
 
-dias=$(($segundos / (60 * 60 * 24)))
-segundos=$(($segundos % (60 * 60 * 24)))
-horas=$((segundos / (60 * 60)))
-segundos=$((segundos % (60 * 60)))
+# 60*60*24= 86400
+# 60*60 = 3600
+dias=$((segundos / (86400)))
+segundos=$((segundos % (86400)))
+horas=$((segundos / (3600)))
+segundos=$((segundos % (3600)))
 minutos=$((segundos / 60))
 segundos=$((segundos % 60))
 
